@@ -322,7 +322,7 @@ h1, h2, h3 ,h4, h5, h6{
 ul.row{
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    list-style: none;
 }
 
 .col-1-3 {

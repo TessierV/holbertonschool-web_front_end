@@ -10,7 +10,7 @@ You must use a @for statement */
 $perc: 100%;
 
 @for $numb from 1 through 4 {
-    col-#{$numb} {
+    .col-#{$numb} {
       width: $perc / $numb;
     }
 }

@@ -1,7 +1,7 @@
-/* styles.scss */
+/* 0 debug log .scss */
 
-$hello-world-message: "Hello world";
+$message: "Hello world";
 
 body {
-  @debug $hello-world-message;
+  @debug $message;
 }

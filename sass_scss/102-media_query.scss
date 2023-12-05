@@ -1,0 +1,44 @@
+/* Write a Sass file that assigns:
+
+Font size 20px to h1 tags
+Font size 18px to h1 tags, when your screen width is smaller than 960px
+Font size 16px to h1 tags, when your screen width is smaller than 640px
+Font size 14px to h1 tags, when your screen width is smaller than 320px
+Text color #1D1D1D to h1.small tags, when your screen width is smaller than 320px */
+
+// 102-media_query.scss
+
+$font-sizes: (
+  large: 20px,
+  medium: 18px,
+  small: 16px,
+  xsmall: 14px,
+);
+
+$width-sizes: (
+  w_medium: 960px,
+  w_small: 640px,
+  w_xsmall: 320px,
+);
+
+$color: #1D1D1D;
+
+h1 {
+  font-size: map-get($font-sizes, large);
+
+  @media screen and (max-width: map-get($width-sizes, w_medium)) {
+    font-size: map-get($font-sizes, medium);
+  }
+
+  @media screen and (max-width: map-get($width-sizes, w_small)) {
+    font-size: map-get($font-sizes, small);
+  }
+
+  @media screen and (max-width: map-get($width-sizes, w_xsmall)) {
+    font-size: map-get($font-sizes, xsmall);
+    &.small {
+      color: $color;
+    }
+  }
+}
+

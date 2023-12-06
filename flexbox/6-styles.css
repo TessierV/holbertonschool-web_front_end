@@ -237,9 +237,8 @@
     /*display: var(--nav-item-display);*/
   }
 
-  .nav-item + .nav-item{
+  .nav .nav-item + .nav .nav-item{
     margin: var(--nav-item-margin);
-
   }
 
   .nav .nav-link {

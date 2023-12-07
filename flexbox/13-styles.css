@@ -322,7 +322,7 @@
     flex-direction: column;
   }
 
-  strong .post-meta-list{
+  .post-meta-list strong{
     color: var(--color-primary);
     font-size: var(--font-size-small);
     text-transform: uppercase;
@@ -353,7 +353,6 @@
   }
   .tag-list li::after{
     content: ", ";
-
   }
 
   .tag-list li:last-child::after {

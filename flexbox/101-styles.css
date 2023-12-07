@@ -1,0 +1,67 @@
+:root{
+    --box1-bg : #55CE69;
+    --box2-bg : #4E99DF;
+    --box3-bg : #384B61;
+    --box4-bg : #9755BB;
+    --box5-bg : #DE7B00;
+    --font_color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--font_color);
+    font-weight: 400;
+    align-items: center;
+}
+
+.box{
+    height: min-content;
+
+}
+.box:first-child, .box:last-child{
+    font-size: 30px;
+    border-width: 25px 20px;
+    border-style: solid;
+    transform: translateY(25px);
+}
+
+.box:nth-child(even){
+    font-size: 55px;
+    border-width: 30px 30px;
+    border-style: solid;
+    transform: translateY(10px);
+}
+
+.box:nth-child(3){
+    font-size: 100px;
+    border-width: 30px 30px;
+    border-style: solid;
+}
+
+.box1{
+    background-color: var(--box1-bg);
+    border-color: var(--box1-bg);
+}
+
+.box2{
+    background-color: var(--box2-bg);
+    border-color: var(--box2-bg);
+}
+
+.box3{
+    background-color: var(--box3-bg);
+    border-color: var(--box3-bg);
+}
+
+.box4{
+    background-color: var(--box4-bg);
+    border-color: var(--box4-bg);
+}
+
+.box5{
+    background-color: var(--box5-bg);
+    border-color: var(--box5-bg);
+}
+

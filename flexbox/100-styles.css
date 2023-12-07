@@ -310,7 +310,7 @@
     width: 100%;
   }
 
-  .post-content p:nth-child(1){
+  .post-content p:first-child {
     font-size: var(--font-size-x-large);
   }
 
@@ -318,7 +318,7 @@
     margin: 1rem 0;
     padding: 0 .5rem;
     font-size: var(--font-size-small);
-    color: var(--color-grey, #a0a0a0);
+    color: var(--color-grey, var(--color-grey));
     text-align: center;
   }
 

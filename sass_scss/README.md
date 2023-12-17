@@ -1,4 +1,5 @@
-<img src="https://github.com/TessierV/holbertonschool-web_front_end/assets/113889290/32efbc76-2278-4f9d-bcc6-99800e865801" />
+<img src="https://github.com/TessierV/holbertonschool-web_front_end/assets/113889290/eda48c4c-ff7a-4d4e-8778-b5ce34179cd5" />
+
 <br>
 <br>
 

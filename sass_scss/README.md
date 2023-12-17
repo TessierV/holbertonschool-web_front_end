@@ -1,7 +1,6 @@
-<img src="https://github.com/TessierV/holbertonschool-web_front_end/assets/113889290/4cc59395-debc-4dfa-aa66-745f452e6dfc" />
+<img src="https://github.com/TessierV/holbertonschool-web_front_end/assets/113889290/32efbc76-2278-4f9d-bcc6-99800e865801" />
 <br>
 <br>
-
 
 <p>Sass, or Syntactically Awesome Stylesheets, is a powerful and feature-rich extension of CSS.
 It introduces variables, nested rules, and mixins, providing a more maintainable and modular approach to styling.</p>

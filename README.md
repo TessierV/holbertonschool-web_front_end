@@ -10,7 +10,7 @@
 </p>
 <br> 
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
-<p align="left">mandatory 33 tasks</p>
+<p align="left">Mandatory 33 tasks</p>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/f68c3441-c4fe-4af2-90db-a0eb69922241" />
 <p align="left">No group</p>
 <br><br>
@@ -19,7 +19,7 @@
 <p>Unravel the secrets of web development with this exercise that teaches you how to find valuable information on a website using inspection tools. Explore the elements of a webpage, analyze styles and scripts, and understand the underlying structure. This exercise is designed to empower you with the skills to navigate and extract information effectively, a crucial aspect of web development.</p>
 <br> 
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
-<p align="left">mandatory 35 tasks</p>
+<p align="left">Mandatory 35 tasks</p>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/f68c3441-c4fe-4af2-90db-a0eb69922241" />
 <p align="left">No group</p>
 <br><br>
@@ -40,7 +40,7 @@
 </p>
 <br> 
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
-<p align="left">mandatory 8 tasks</p>
+<p align="left">Mandatory 8 tasks</p>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/f68c3441-c4fe-4af2-90db-a0eb69922241" />
 <p align="left">No group</p>
 <br><br>
@@ -49,7 +49,7 @@
 <p>This directory focused on creating HTML blocks. Each task is designed to structure the site's content according to the Figma design specifications, ensuring visual consistency and an optimal user experience.</p>
 <br>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
-<p align="left">mandatory 40 tasks</p>
+<p align="left">Mandatory 40 tasks</p>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/f68c3441-c4fe-4af2-90db-a0eb69922241" />
 <p align="left">No group</p>
 <br><br>

@@ -770,6 +770,13 @@ ul.row {
   flex-direction: row-reverse;
 }
 
+/*Not necessary just for visual personnal purpose*/
+.section-latest-news .card-blog img{
+  max-height: 400px;
+  object-fit: cover;
+
+}
+
 @media screen and (max-width: 767px) {
   .section-latest-news .row {
     flex-direction: column;
@@ -909,6 +916,9 @@ ul.row {
   border-radius: 50%;
   width: 10rem;
   height: 10rem;
+  /*Been adding for visual personnal purpose*/
+  object-fit: cover;
+
 }
 
 .card-testimonial .card-quote cite {

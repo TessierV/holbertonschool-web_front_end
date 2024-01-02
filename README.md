@@ -81,7 +81,7 @@ It introduces variables, nested rules, and mixins, providing a more maintainable
 <p>Embark on a journey to enhance website accessibility in this project. Delve into considerations like color choices and code readability to create a site that is inclusive and user-friendly for all. Elevate your web development skills by building websites that prioritize accessibility. Let's build together for a more inclusive online experience!</p>
 <br><br>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
-<p align="left">mandatory 12 tasks</p>
+<p align="left">Mandatory 12 tasks</p>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
 <p align="left">No group</p>
 <br><br>

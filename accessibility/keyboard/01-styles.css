@@ -659,14 +659,14 @@
 
   /*.card-work:hover .card-inner {
     background-color: rgba(0, 0, 0, 0.7);
-  }
+  }*/
 
   .card-work .card-title {
     text-align: center;
     margin: 0;
     height: 100%;
     position: relative;
-  }*/
+  }
 
   .card-work .card-title a {
     display: block;
@@ -691,9 +691,9 @@
     content: '';
   }
 
-  .card-work:hover .card-title {
+  /*.card-work:hover .card-title {
     opacity: 1;
-  }
+  }*/
 
   @media only screen and (max-width: 767px) {
 

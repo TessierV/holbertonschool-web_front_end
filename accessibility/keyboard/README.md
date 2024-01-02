@@ -1,4 +1,8 @@
-# Keyboard 
+![image](https://github.com/TessierV/holbertonschool-web_front_end/assets/113889290/72ade1fa-0156-4733-a623-2bdbc8249ad7)
+
+# Keyboard:
+<p>⋅ 0. make the "works" card focus visible</p>  
+<br>
 
 ## Resume:
 Let’s start by the “Work” section:
@@ -18,6 +22,7 @@ Property: background-color, Value: rgba(0, 0, 0, 0.7)
 Now you use the keyboard to navigate, you should see the card with the title and the dark background like when you hover the card with your mouse.
 <br><br>
 All the other elements have a blue outline around.
+
 
 ## Result:
 ![image](https://github.com/TessierV/holbertonschool-web_front_end/assets/113889290/640eb184-db43-4318-87b1-d8fc1bee10c5)

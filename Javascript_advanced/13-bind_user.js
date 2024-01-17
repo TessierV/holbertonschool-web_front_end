@@ -1,4 +1,3 @@
-
 const user = {
     hobby: 'Calligraphy',
     favoriteSport: 'Hockey',
@@ -7,10 +6,9 @@ const user = {
     lastName: 'Ialva',
     location: 'Telaviv',
     occupation: 'Engineer',
-
 }
 
-function logWelcomeUser(welcomeString){
+function logWelcomeUser(welcomeString) {
     console.log(`${welcomeString}, ${user.firstName}. Your occupation is: ${user.occupation}`)
 }
 let bindLogWelcomeUser = logWelcomeUser.bind(user);

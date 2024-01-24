@@ -13,7 +13,6 @@
 
 <br>
 <h1  align="left">Mandatories:</h1>
-<p>Sass exercises to learn efficient and scalable styling techniques for modern web development.</p>
 <br> 
 <p align="left">⋅ 0. Lexical scoping and welcome message</p>
 <p align="left">⋅ 1. Closure Scope Chain</p>

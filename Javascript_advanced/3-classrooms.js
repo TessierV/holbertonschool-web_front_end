@@ -1,17 +1,16 @@
-function createClassRoom (numberOfStudents){
+function createClassRoom(numberOfStudents) {
 
-    function studentSeat(seat){
-        return function() {
+    function studentSeat(seat) {
+        return function () {
             return seat;
         };
     }
 
     var students = [];
 
-    for (var iteration = 0; iteration < numberOfStudents; iteration++ ){
-		students.push(studentSeat(iteration + 1));
+    for (var iteration = 0; iteration < numberOfStudents; iteration++) {
+        students.push(studentSeat(iteration + 1));
     }
-
     return students;
 }
 

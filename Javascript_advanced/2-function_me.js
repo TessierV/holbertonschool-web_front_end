@@ -2,6 +2,6 @@ function welcomeMessage(fullName){
 	alert('Welcome' + fullName);
 }
 
-guillame = function() {welcomeMessage(" "+"Guillaume")};
-alex = function() {welcomeMessage(" "+"Alex")};
-fred = function() {welcomeMessage(" "+"Fred")};
+guillame = welcomeMessage(" "+"Guillaume");
+alex = welcomeMessage(" "+"Alex");
+fred = welcomeMessage(" "+"Fred");

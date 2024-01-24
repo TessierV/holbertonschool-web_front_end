@@ -1,6 +1,6 @@
 function createElement(data) {
     var paragraph = document.createElement('p');
-    paragraph.textContent = data; // 'textcontent' should be 'textContent'
+    paragraph.textContent = data;
     document.body.appendChild(paragraph);
 }
 
@@ -8,7 +8,7 @@ function queryWikipedia(callback) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            const response = JSON.parse(xhttp.responseText); // 'xhr' should be 'xhttp'
+            const response = JSON.parse(xhttp.responseText);
             const pageId = Object.keys(response.query.pages)[0];
             const extract = response.query.pages[pageId].extract;
             callback(extract);

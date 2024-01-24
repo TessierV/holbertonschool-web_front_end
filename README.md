@@ -86,5 +86,33 @@ It introduces variables, nested rules, and mixins, providing a more maintainable
 <p align="left">No group</p>
 <br><br>
 
+<h1  align="left">Bootstrap:</h1>
+<p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript design templates for typography, forms, buttons, navigation, and other interface components. For this project, you will use Bootstrap 4.4 and only the CSS styling part.</p>
+<br><br>
+<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
+<p align="left">Mandatory 7 tasks</p>
+<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
+<p align="left">No group</p>
+<br><br>
+
+<h1  align="left">Javascript Advanced:</h1>
+<p>In this advanced JavaScript mastery module, guided by Johann Kerbrat, Engineering Manager at Uber Works, you will delve into key concepts such as lexical scoping, closures, and the intricacies of the call stack. Gain insights into how to effectively use closures, chain them for powerful functionality, and simulate private methods. Understand the execution stack order, explore the nuances of binding, and harness the potential of callbacks. Elevate your JavaScript expertise with practical knowledge that aligns with industry demands.</p>
+<br><br>
+<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
+<p align="left">Mandatory 15 tasks</p>
+<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
+<p align="left">No group</p>
+<br><br>
+
+<h1  align="left">jQuery advanced:</h1>
+<p>Embark on your jQuery journey with Johann Kerbrat, Engineering Manager at Uber Works, in this entry-level module. Discover the power of loading jQuery from a CDN, creating and manipulating DOM elements, and seamlessly integrating click handlers. Dive into the world of AJAX queries, from simple GET requests to advanced operations, and master the art of crafting dynamic paginations. Elevate your proficiency in jQuery essentials and amplify your web development toolkit.</p>
+<br><br>
+<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
+<p align="left">Mandatory 13 tasks</p>
+<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
+<p align="left">No group</p>
+<br><br>
+
+
 <br/><hr>
 <p align="right">Holberton TOULOUSE</p>

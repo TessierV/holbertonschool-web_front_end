@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Task 2</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script type="application/javascript">
+
+        window.onload = function () {
+            if (window.jQuery) {
+                console.log('jQuery has been loaded correctly');
+            } else {
+                console.log('jQuery has not been loaded correctly');
+            }
+
+            createFamilyTree();
+        };
+
+        function createFamilyTree() {
+            const firstNameHeader = 'Firstname';
+            const lastNameHeader = 'Lastname';
+
+            const personae = [
+                ['Guillaume', 'Salva'],
+                ['Paulette', 'Salva'],
+                ['Antoine', 'Salva']
+            ];
+
+            const table = $(`<table><thead><tr><th>${firstNameHeader}</th><th>${lastNameHeader}</th></tr></thead><tbody></tbody></table>`);
+
+            personae.forEach(row => {
+                table.find('tbody').append(`<tr><td>${row[0]}</td><td>${row[1]}</td></tr>`);
+            });
+            $('body').append(table);
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

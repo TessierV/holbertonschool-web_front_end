@@ -5,7 +5,7 @@ Welcome to the "Forms" project, an amateur-level exploration guided by David Dia
 
 <br><br>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
-<p align="left">Mandatory: 6 tasks</p>
+<p align="left">Mandatory: 7 tasks</p>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/f68c3441-c4fe-4af2-90db-a0eb69922241" />
 <p align="left">No group</p>
 

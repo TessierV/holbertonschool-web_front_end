@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Task 10</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+</head>
+
+<body>
+    <div id="posts-container"></div>
+
+    <script type='application/javascript'>
+        document.addEventListener("DOMContentLoaded", function () {
+            function addPostRow(data) {
+                $("#posts-container").append(`
+                        <p>
+                            <span>Post created with id ${data.id}, title: ${data.title}, author: ${data.author}</span>
+                        </p>
+                    `);
+            };
+
+            function listPosts() {
+                fetch('http://localhost:3000/posts')
+                    .then(response => response.json())
+                    .then(data => {
+                        data.forEach(item => {
+                            addPostRow(item);
+                        });
+                    })
+                    .catch(() => {
+                        window.alert('Server Error');
+                    });
+            }
+
+            listPosts();
+        });
+    </script>
+</body>
+
+</html>

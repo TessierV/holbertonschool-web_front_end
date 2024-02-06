@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2</title>
+    <script type="text/javascript" src="../src/index.js"></script>
+</head>
+
+<body>
+    <h2>Login to the website</h2>
+    <input type="text" id="firstname" name="firstname" placeholder="Firstname">
+    <input type="text" id="email" name="email" placeholder="Email">
+
+    <button onclick="setCookies()">Log me in</button>
+    <h2>Cookies</h2>
+    <button onclick="showCookies()">Show the cookies</button>
+    <script>
+        function setCookies() {
+            var firstnameValue = document.getElementById("firstname").value;
+            var emailValue = document.getElementById("email").value;
+
+            var date = new Date();
+            date.setDate(date.getDate() + 10);
+
+            document.cookie = "firstname=" + firstnameValue + "; expires=" + date.toUTCString() + "; path=/";
+            document.cookie = "email=" + emailValue + "; expires=" + date.toUTCString() + "; path=/";
+        }
+
+        function showCookies() {
+            var firstnameCookie = getCookie("firstname");
+            var emailCookie = getCookie("email");
+
+            var paragraph = document.createElement("p");
+            var txt = document.createTextNode("Email: " + emailCookie + " - Firstname: " + firstnameCookie);
+            paragraph.appendChild(txt);
+            document.body.appendChild(paragraph);
+        }
+
+        function getCookie(name) {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                if (cookie.startsWith(name + '=')) {
+                    return cookie.substring(name.length + 1);
+                }
+            }
+            return "";
+        }
+    </script>
+</body>
+
+</html>

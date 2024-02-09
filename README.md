@@ -82,7 +82,7 @@ It introduces variables, nested rules, and mixins, providing a more maintainable
 <br><br>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
 <p align="left">Mandatory 12 tasks</p>
-<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
+<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/f68c3441-c4fe-4af2-90db-a0eb69922241" />
 <p align="left">No group</p>
 <br><br>
 
@@ -91,7 +91,7 @@ It introduces variables, nested rules, and mixins, providing a more maintainable
 <br><br>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
 <p align="left">Mandatory 7 tasks</p>
-<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
+<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/f68c3441-c4fe-4af2-90db-a0eb69922241" />
 <p align="left">No group</p>
 <br><br>
 
@@ -100,7 +100,7 @@ It introduces variables, nested rules, and mixins, providing a more maintainable
 <br><br>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
 <p align="left">Mandatory 15 tasks</p>
-<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
+<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/f68c3441-c4fe-4af2-90db-a0eb69922241" />
 <p align="left">No group</p>
 <br><br>
 
@@ -109,10 +109,18 @@ It introduces variables, nested rules, and mixins, providing a more maintainable
 <br><br>
 <img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
 <p align="left">Mandatory 13 tasks</p>
-<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
+<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/f68c3441-c4fe-4af2-90db-a0eb69922241" />
 <p align="left">No group</p>
 <br><br>
 
+<h1  align="left">Cookies_local_storage:</h1>
+<p>Welcome to the Cookies & Local Storage project, led by Johann Kerbrat, Engineering Manager at Uber Works. This project delves into the world of cookies and web storage in JavaScript, crucial aspects for managing user data in web applications.</p>
+<br><br>
+<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/75f76703-549a-45ed-8091-9fdc76ed72eb" />
+<p align="left">Mandatory 8 tasks</p>
+<img align="left" width="2%" alt="Github" src="https://github.com/TessierV/TessierV/assets/113889290/f68c3441-c4fe-4af2-90db-a0eb69922241" />
+<p align="left">No group</p>
+<br><br>
 
 <br/><hr>
 <p align="right">Holberton TOULOUSE</p>

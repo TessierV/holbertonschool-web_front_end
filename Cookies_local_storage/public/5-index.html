@@ -39,7 +39,7 @@
 
         function displayCart() {
             const cartItems = Object.keys(localStorage);
-            const message = cartItems.length > 0 ? `You previously had ${cartItems.length} item in your cart` : '';
+            const message = cartItems.length > 0 ? `You previously had ${cartItems.length} item${cartItems.length > 1 ? "s" : ''} in your cart` : '';
 
             const existingP = document.querySelector('p');
             if (existingP) {
@@ -49,7 +49,7 @@
             const p = document.createElement('p');
             p.textContent = message;
             document.body.appendChild(p);
-                }
+        }
     </script>
 
 

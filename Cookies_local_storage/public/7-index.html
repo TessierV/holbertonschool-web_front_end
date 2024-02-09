@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 7</title>
+</head>
+
+<body>
+
+    <script type="application/javascript">
+        const availableItems = ['Shampoo', 'Soap', 'Sponge', 'Water'];
+
+        if (!window.sessionStorage) {
+            alert('Sorry, your browser does not support Web storage. Try again with a better one');
+        } else {
+            createStore();
+            displayCart();
+        }
+
+        function getCartFromStorage() {
+            let products = {}
+
+            for (let i = 0; i < availableItems.length; i++) {
+                if (Object.keys(sessionStorage).includes(availableItems[i])) {
+                    products[availableItems[i]] = sessionStorage[availableItems[i]];
+                }
+            }
+            return JSON.stringify(products)
+        }
+
+        function addItemToCart(item) {
+            sessionStorage[item] ? sessionStorage[item]++ : sessionStorage[item] = 1;
+            displayCart();
+        }
+
+        function removeItemfromCart(item) {
+            const li = document.createElement('li');
+            li.textContent = item;
+            li.remove();
+            sessionStorage.removeItem(li.innerText.split(" ")[0]);
+            displayCart();
+        }
+
+        function clearCart() {
+            let div = document.getElementById("cart");
+
+            while (div.hasChildNodes()) {
+                div.removeChild(div.firstChild);
+            }
+            sessionStorage.clear();
+        }
+
+        function displayCart() {
+            if (document.getElementById("cart")) {
+                while (document.getElementById("cart").hasChildNodes()) {
+                    document.getElementById("cart").removeChild(document.getElementById("cart").firstChild);
+                }
+            } else {
+                const div = document.createElement("div");
+                const h2 = document.createElement("h2");
+
+                div.setAttribute("id", "cart");
+                h2.appendChild(document.createTextNode("Your cart:"));
+                document.body.appendChild(h2);
+                document.body.appendChild(div);
+            }
+            updateCart();
+        }
+
+        function createStore() {
+            const h2 = document.createElement("h2");
+            h2.innerText = "Available products:";
+            const ul = document.createElement("ul");
+            for (const i in availableItems) {
+                const li = document.createElement("li");
+                li.setAttribute("onclick", `addItemToCart("${availableItems[i]}")`);
+                li.innerText = availableItems[i];
+                ul.appendChild(li);
+            }
+            document.body.appendChild(h2);
+            document.body.appendChild(ul);
+        }
+
+        function updateCart() {
+            const div = document.getElementById("cart");
+            const data = getCartFromStorage();
+            const ul = document.createElement("ul");
+
+
+            if (data !== JSON.stringify({})) {
+                const li = document.createElement("li");
+                const items = Object.entries(JSON.parse(data));
+
+                li.appendChild(document.createTextNode("Clear my cart"));
+                li.setAttribute("onclick", "clearCart()");
+                ul.appendChild(li);
+                div.appendChild(ul);
+
+                items.forEach(item => {
+                    let li = document.createElement("li");
+                    let span = document.createElement("span");
+
+
+                    span.appendChild(document.createTextNode(" (remove)"));
+                    span.setAttribute("onclick", "removeItemfromCart('" + item[0] + "')");
+                    li.appendChild(document.createTextNode(item[0] + " x " + item[1]));
+                    li.appendChild(span);
+                    li.setAttribute("id", item[0])
+                    div.appendChild(ul);
+                    ul.appendChild(li);
+                });
+
+            } else {
+                const li = document.createElement("li");
+                li.innerText = "Your cart is empty";
+                div.appendChild(ul);
+                ul.appendChild(li);
+            }
+        }
+    </script>
+</body>
+
+</html>

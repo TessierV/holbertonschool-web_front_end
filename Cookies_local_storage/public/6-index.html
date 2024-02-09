@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex6</title>
+
+</head>
+
+<body>
+    <script>
+        const availableItems = ['Shampoo', 'Soap', 'Sponge', 'Water'];
+
+        if (!window.sessionStorage ) {
+            alert('Sorry, your browser does not support Web storage. Try again with a better one');
+        } else {
+            createStore();
+            displayCart();
+        }
+
+        function addItemToCart(item) {
+            sessionStorage .setItem(item, true);
+            displayCart();
+        }
+
+        function createStore() {
+            const ul = document.createElement('ul');
+            document.body.appendChild(ul);
+
+            availableItems.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                li.style.cursor = 'pointer';
+                li.addEventListener('click', () => addItemToCart(item));
+                ul.appendChild(li);
+            });
+        }
+
+        function displayCart() {
+            const cartItems = Object.keys(sessionStorage );
+            const message = cartItems.length > 0 ? `You previously had ${cartItems.length} item${cartItems.length > 1 ? "s" : ''} in your cart` : '';
+
+            const existingP = document.querySelector('p');
+            if (existingP) {
+                existingP.remove();
+            }
+
+            const p = document.createElement('p');
+            p.textContent = message;
+            document.body.appendChild(p);
+        }
+    </script>
+
+
+</body>
+
+</html>

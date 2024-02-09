@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3</title>
+    <style>
+        #loginForm {
+            display: none;
+        }
+
+        #welcomeMessage a {
+            font-weight: normal;
+            margin-left: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loginForm">
+        <h2>Login to the website</h2>
+        <input type="text" id="firstname" name="firstname" placeholder="Firstname">
+        <input type="text" id="email" name="email" placeholder="Email">
+        <button onclick="setCookies()">Log me in</button>
+    </div>
+
+    <h2 id="welcomeMessage"></h2>
+    <h2>Cookies</h2>
+    <button onclick="showCookies()">Show the cookies</button>
+
+    <script>
+        function setCookies() {
+            var firstnameValue = document.getElementById("firstname").value;
+            var emailValue = document.getElementById("email").value;
+
+            var date = new Date();
+            date.setDate(date.getDate() + 10);
+
+            document.cookie = "firstname=" + firstnameValue + "; expires=" + date.toUTCString() + "; path=/";
+            document.cookie = "email=" + emailValue + "; expires=" + date.toUTCString() + "; path=/";
+
+            showWelcomeMessageOrForm();
+            hideForm();
+        }
+
+        function showCookies() {
+            var firstnameCookie = getCookie("firstname");
+            var emailCookie = getCookie("email");
+
+            var paragraph = document.createElement("p");
+            var txt = document.createTextNode("Email: " + emailCookie + " - Firstname: " + firstnameCookie);
+            paragraph.appendChild(txt);
+            document.body.appendChild(paragraph);
+        }
+
+        function getCookie(name) {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                if (cookie.startsWith(name + '=')) {
+                    return cookie.substring(name.length + 1);
+                }
+            }
+            return "";
+        }
+
+        function showForm() {
+            var welcomeMessage = document.getElementById("welcomeMessage");
+            if (welcomeMessage) {
+                welcomeMessage.parentNode.removeChild(welcomeMessage);
+            }
+
+            document.getElementById("loginForm").style.display = "block";
+        }
+
+        function hideForm() {
+            document.getElementById("loginForm").style.display = "none";
+        }
+
+        function deleteCookiesAndShowForm() {
+            document.cookie = "firstname=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+            showForm();
+        }
+
+        function showWelcomeMessageOrForm() {
+            var firstnameCookie = getCookie("firstname");
+
+            if (firstnameCookie === "") {
+                showForm();
+            } else {
+                var welcomeMessage = document.getElementById("welcomeMessage");
+                if (!welcomeMessage) {
+                    welcomeMessage = document.createElement("h1");
+                    welcomeMessage.id = "welcomeMessage";
+                    document.body.appendChild(welcomeMessage);
+                }
+
+                welcomeMessage.innerHTML = "Welcome " + firstnameCookie + " <a href='#' onclick='deleteCookiesAndShowForm()'> (logout)</a>";
+            }
+        }
+        showWelcomeMessageOrForm();
+    </script>
+</body>
+
+</html>
